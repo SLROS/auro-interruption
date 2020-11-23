@@ -8,8 +8,6 @@ import { classMap } from 'lit-html/directives/class-map';
 
 // Import touch detection lib
 import "focus-visible/dist/focus-visible.min.js";
-import styleCss from "./style-css.js";
-import styleCssFixed from './style-fixed-css.js';
 import closeIcon from '@alaskaairux/orion-icons/dist/icons/close-lg_es6.js';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
@@ -146,7 +144,7 @@ export default class ComponentBase extends LitElement {
 
     return html`
       ${this.getDialogStyles()}
-      
+
       <div class="${classMap(classes)}" id="dialog-overlay" @click=${this.modal ? null : this.toggleOverlayViewable}>
       </div>
 

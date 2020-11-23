@@ -1,7 +1,5 @@
 # auro-dialog
 
-auro-dialog appear above the page and require the user's attention.
-
 ## Attributes
 
 | Attribute | Type      | Description                     |
@@ -15,6 +13,12 @@ auro-dialog appear above the page and require the user's attention.
 |----------|-----------|-----------|--------------------------------------------------|
 | `modal`  | `modal`   | `Boolean` | Modal dialog restricts the user to take an action (no default close actions) |
 | `open`   | `open`    | `Boolean` | Sets state of dialog to open                     |
+
+## Methods
+
+| Method            | Type                 |
+|-------------------|----------------------|
+| `getDialogStyles` | `(): TemplateResult` |
 
 ## Slots
 

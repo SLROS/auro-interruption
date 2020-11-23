@@ -6,8 +6,8 @@
 import { html, unsafeCSS } from 'lit-element';
 import 'focus-visible/dist/focus-visible.min.js';
 import ComponentBase from './component-base';
-import styleCss from "./style-dialog-css.js";
-import styleCssFixed from './style-dialog-fixed-css.js';
+import styleCss from "./style-drawer-css.js";
+import styleCssFixed from './style-drawer-fixed-css.js';
 
 class AuroDialog extends ComponentBase {
 
