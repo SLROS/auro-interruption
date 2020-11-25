@@ -7,6 +7,7 @@ import { html, unsafeCSS } from 'lit-element';
 import 'focus-visible/dist/focus-visible.min.js';
 import ComponentBase from './component-base';
 import styleCss from "./style-drawer-css.js";
+import styleCssFixed from "./style-drawer-fixed-css.js";
 
 class AuroDrawer extends ComponentBase {
 
@@ -14,6 +15,7 @@ class AuroDrawer extends ComponentBase {
   getDialogStyles() {
     return html`
       <style>${unsafeCSS(styleCss)}</style>
+      <style>${unsafeCSS(styleCssFixed)}</style>
     `
   }
 }

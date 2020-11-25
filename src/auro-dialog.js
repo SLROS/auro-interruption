@@ -15,6 +15,7 @@ class AuroDialog extends ComponentBase {
   getDialogStyles() {
     return html`
       <style>${unsafeCSS(styleCss)}</style>
+      <style>${unsafeCSS(styleCssFixed)}</style>
     `
   }
 }
