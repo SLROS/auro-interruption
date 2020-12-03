@@ -32,7 +32,7 @@ class LongText extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-      <p>${this.returnText(this.count)}<p>
+      <p style="max-width:400px">${this.returnText(this.count)}<p>
     `;
   }
 }
