@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 15 Oct 2020 01:21:18 GMT
+ * Generated on Sat, 14 Nov 2020 01:58:41 GMT
  */
 :root {
   --auro-animation-default-property: all;
@@ -343,10 +343,10 @@
       transition: none !important; } }
 
 *:focus {
-  outline: none; }
+  outline: 3px solid transparent; }
 
 .js-focus-visible :focus:not(.focus-visible) {
-  outline: none; }
+  outline: 3px solid transparent; }
 
 .heading {
   margin: calc(1rem + 0.75rem) 0;
@@ -455,7 +455,7 @@
 
 /*
   Do not edit directly
-  Generated on Thu, 15 Oct 2020 01:21:17 GMT
+  Generated on Sat, 14 Nov 2020 01:58:41 GMT
 */
 .util_stackPaddingNone--top {
   padding-top: 0; }
@@ -521,6 +521,15 @@
   :host([md]) .dialog {
     max-width: 45%; } }
 
+:host([sm][lg]) .dialog,
+:host([md][lg]) .dialog {
+  max-height: 90%; }
+
+@media screen and (min-width: 1024px) {
+  :host([sm][lg]) .dialog,
+  :host([md][lg]) .dialog {
+    max-height: 80%; } }
+
 .dialog {
   transition: all 0.3s ease-in-out;
   position: fixed;
@@ -562,6 +571,9 @@
       .dialog--open {
         transform: scale(1); } }
 
+:host([unformatted]) .dialog {
+  padding: 0; }
+
 .dialog-header {
   display: flex;
   justify-content: space-between;
@@ -579,3 +591,15 @@
       border-color: var(--auro-color-border-active-on-light); }
     .dialog-header--action:hover {
       cursor: pointer; }
+
+:host([unformatted]) .dialog-header--action {
+  position: absolute;
+  top: var(--auro-size-xl);
+  right: var(--auro-size-xl); }
+  @media screen and (min-width: 1024px) {
+    :host([unformatted]) .dialog-header--action {
+      top: var(--auro-size-xxxl);
+      right: var(--auro-size-xxxl); } }
+
+:host([unformatted][onDark]) .dialog-header--action {
+  color: var(--auro-color-base-white); }

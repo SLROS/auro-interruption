@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 15 Oct 2020 01:21:18 GMT
+ * Generated on Sat, 14 Nov 2020 01:58:41 GMT
  */
 :root {
   --auro-animation-default-property: all;
@@ -338,11 +338,11 @@
 :host([fixed]) {
   /**
  * Do not edit directly
- * Generated on Thu, 15 Oct 2020 01:21:18 GMT
+ * Generated on Sat, 14 Nov 2020 01:58:41 GMT
  */
   /*
   Do not edit directly
-  Generated on Thu, 15 Oct 2020 01:21:17 GMT
+  Generated on Sat, 14 Nov 2020 01:58:41 GMT
 */ }
   :host([fixed]) :root {
     --auro-animation-default-property: all;
@@ -683,9 +683,9 @@
         animation: none !important;
         transition: none !important; } }
   :host([fixed]) *:focus {
-    outline: none; }
+    outline: 3px solid transparent; }
   :host([fixed]) .js-focus-visible :focus:not(.focus-visible) {
-    outline: none; }
+    outline: 3px solid transparent; }
   :host([fixed]) .heading {
     margin: calc(1rem + 0.75rem) 0;
     font-weight: 500;
