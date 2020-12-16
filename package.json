@@ -105,7 +105,7 @@
     "dev": "npm run sassBuild:watch",
     "distJS": "copyfiles -u 1 -V './src/**/*.js' './src/**/*.css' ./dist",
     "sassRender": "sass-render src/*.css -t ./scripts/staticStyles-template.js",
-    "sweep": "rm -rf ./temp ./demo/css ./demo/fonts ./dist ./src/tokens | rm ./src/*.css ./src/*-css.js",
+    "sweep": "rm -rf ./temp ./demo/css ./demo/fonts ./dist ./src/tokens ./src/*.css ./src/*-css.js",
     "esLint": "./node_modules/.bin/eslint src/auro-*.js",
     "lint": "npm-run-all cssLint esLint",
     "test": "karma start --coverage",

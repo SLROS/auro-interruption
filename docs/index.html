@@ -54,6 +54,9 @@
       '<auro-dialog id="demo1" header="Non-blocking Modal">Hello World!</auro-dialog>',
       '<auro-dialog id="demo2" header="Blocking modal" blocking>Hello World!</auro-dialog>'
     ]
+    var auroDrawer = [
+      '<auro-drawer id="demo3" header="Drawer">Hello World!</auro-drawer>',
+    ]
   </script>
 </head>
 
@@ -90,6 +93,28 @@
       }
 
     </script>
+
+<h1>auro-drawer API examples</h1>
+<p>The following examples illustrate the auro-drawer APIs used within any web app.</p>
+<section class="wc-wrapper">
+  <h3>auro-drawer: default</h3>
+  <p>Note: Drawers require the implementing application to add and remove the 'open' attribute to the element.</p>
+  <button onclick="fireDemo('demo3');">Drawer 1</button>
+  <script>
+    for (i = 0; i < auroDrawer.length; i++) {
+      document.write(auroDrawer[i])
+    }
+  </script>
+  <div class="codeWrapper margin">
+    <code>
+      <script>
+        for (i = 0; i < auroDrawer.length; i++) {
+          document.write("<p> ".concat(escapeHTML(auroDrawer[i]), " </p>"));
+        }
+      </script>
+    </code>
+  </div>
+</section>
   </main>
   <div id="assets">
     <link rel="stylesheet"

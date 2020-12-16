@@ -13,6 +13,8 @@
       import '@polymer/iron-demo-helpers/demo-snippet';
     </script>
     <script type="module" src="../src/auro-dialog.js"></script>
+    <script type="module" src="../src/auro-drawer.js"></script>
+
     <script type="module" src="contentExamples/longtext.js"></script>
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles"></style>
@@ -262,6 +264,26 @@
               <button onclick="closeDemo('#dialogDynamicHeightsm');">Close</button>
             </span>
           </auro-dialog>
+        </template>
+      </demo-snippet>
+
+      <h1>auro-drawer</h1>
+
+      <h2>auro-drawer example</h2>
+      <demo-snippet>
+        <template>
+            <button onclick="fireDemo('#fixedDrawer');">Drawer</button>
+
+            <auro-drawer id="fixedDrawer" sm fixed>
+              <span slot="header">Dialog w/footer</span>
+              <span slot="content">
+                <long-text count="500"></long-text>
+              </span>
+
+              <span slot="footer">
+                <button onclick="closeDemo('#fixedDrawer');">Close</button>
+              </span>
+            </auro-drawer>
         </template>
       </demo-snippet>
 
