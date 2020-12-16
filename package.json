@@ -97,9 +97,9 @@
   ],
   "scripts": {
     "build": "npm run ciBuild",
-    "apiBuild": "wca analyze 'src/auro-dialog.js' --outFiles docs/api.md",
-    "bundler": "rollup -c",
-    "bundle:test": "rollup -c -w",
+    "apiBuild": "wca analyze 'src/auro-*.js' --outFiles docs/api.md",
+    "bundler": "webpack --mode=production",
+    "bundle:test": "webpack-dev-server --host 0.0.0.0",
     "postinstall": "node packageScripts/postinstall.js",
     "cssLint": "stylelint './src/*.css'",
     "dev": "npm run sassBuild:watch",

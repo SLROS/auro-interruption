@@ -376,5 +376,43 @@
         </script>
 
     </div>
+    <div class="vertical-section-container">
+      <h1>auro-drawer</h1>
+
+      <h2>auro-drawer example</h2>
+      <demo-snippet>
+        <template>
+            <button onclick="fireDemo('#fixedDrawer');">Drawer</button>
+
+            <auro-drawer id="fixedDrawer" sm fixed>
+              <span slot="header">Dialog w/footer</span>
+              <span slot="content">
+                <long-text count="500"></long-text>
+              </span>
+
+              <span slot="footer">
+                <button onclick="closeDemo('#fixedDrawer');">Close</button>
+              </span>
+            </auro-drawer>
+        </template>
+      </demo-snippet>
+
+
+
+
+      <script>
+        function fireDemo(elName) {
+          let dialog = document.querySelector(elName);
+          dialog.removeAttribute("open");
+          dialog.setAttribute("open", true);
+        }
+
+        function closeDemo(elName) {
+          let dialog = document.querySelector(elName);
+          dialog.removeAttribute("open");
+        }
+        </script>
+
+    </div>
   </body>
 </html>

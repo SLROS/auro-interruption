@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>auro-dialog API examples and bundled install support</title>
+  <title>auro-interruption API examples and bundled install support</title>
   <style>
     main {
       width: 80%;
@@ -115,6 +115,38 @@
     </code>
   </div>
 </section>
+  </main>
+  <main>
+    <h1>auro-drawer API examples</h1>
+    <p>The following examples illustrate the auro-drawer APIs used within any web app.</p>
+    <section class="wc-wrapper">
+      <h3>auro-drawer: default</h3>
+      <p>Note: Drawers require the implementing application to add and remove the 'open' attribute to the element.</p>
+      <button onclick="fireDemo('demo3');">Drawer 1</button>
+      <script>
+        for (i = 0; i < auroDrawer.length; i++) {
+          document.write(auroDrawer[i])
+        }
+      </script>
+      <div class="codeWrapper margin">
+        <code>
+          <script>
+            for (i = 0; i < auroDrawer.length; i++) {
+              document.write("<p> ".concat(escapeHTML(auroDrawer[i]), " </p>"));
+            }
+          </script>
+        </code>
+      </div>
+    </section>
+    <script>
+      function fireDemo(elName) {
+          var upsell = document.getElementById(elName);
+          console.log("opening", upsell);
+          upsell.removeAttribute("open");
+          upsell.setAttribute("open", '');
+      }
+
+    </script>
   </main>
   <div id="assets">
     <link rel="stylesheet"

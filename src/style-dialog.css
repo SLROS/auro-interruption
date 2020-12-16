@@ -343,10 +343,10 @@
       transition: none !important; } }
 
 *:focus {
-  outline: 3px solid transparent; }
+  outline: none; }
 
 .js-focus-visible :focus:not(.focus-visible) {
-  outline: 3px solid transparent; }
+  outline: none; }
 
 .heading {
   margin: calc(1rem + 0.75rem) 0;
@@ -521,15 +521,6 @@
   :host([md]) .dialog {
     max-width: 45%; } }
 
-:host([sm][lg]) .dialog,
-:host([md][lg]) .dialog {
-  max-height: 90%; }
-
-@media screen and (min-width: 1024px) {
-  :host([sm][lg]) .dialog,
-  :host([md][lg]) .dialog {
-    max-height: 80%; } }
-
 .dialog {
   transition: all 0.3s ease-in-out;
   position: fixed;
@@ -571,9 +562,12 @@
       .dialog--open {
         transform: scale(1); } }
 
+<<<<<<< HEAD
 :host([unformatted]) .dialog {
   padding: 0; }
 
+=======
+>>>>>>> 02cbbcb1cdb20c818c2b228e9cb0634ea20b5b1c
 .dialog-header {
   display: flex;
   justify-content: space-between;
@@ -591,15 +585,3 @@
       border-color: var(--auro-color-border-active-on-light); }
     .dialog-header--action:hover {
       cursor: pointer; }
-
-:host([unformatted]) .dialog-header--action {
-  position: absolute;
-  top: var(--auro-size-xl);
-  right: var(--auro-size-xl); }
-  @media screen and (min-width: 1024px) {
-    :host([unformatted]) .dialog-header--action {
-      top: var(--auro-size-xxxl);
-      right: var(--auro-size-xxxl); } }
-
-:host([unformatted][onDark]) .dialog-header--action {
-  color: var(--auro-color-base-white); }

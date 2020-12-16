@@ -683,9 +683,9 @@
         animation: none !important;
         transition: none !important; } }
   :host([fixed]) *:focus {
-    outline: 3px solid transparent; }
+    outline: none; }
   :host([fixed]) .js-focus-visible :focus:not(.focus-visible) {
-    outline: 3px solid transparent; }
+    outline: none; }
   :host([fixed]) .heading {
     margin: calc(1rem + 0.75rem) 0;
     font-weight: 500;

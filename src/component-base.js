@@ -144,7 +144,6 @@ export default class ComponentBase extends LitElement {
 
     return html`
       ${this.getDialogStyles()}
-      
       <div class="${classMap(classes)}" id="dialog-overlay" @click=${this.modal ? null : this.toggleOverlayViewable}>
       </div>
 

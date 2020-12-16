@@ -343,10 +343,10 @@
       transition: none !important; } }
 
 *:focus {
-  outline: 3px solid transparent; }
+  outline: none; }
 
 .js-focus-visible :focus:not(.focus-visible) {
-  outline: 3px solid transparent; }
+  outline: none; }
 
 .heading {
   margin: calc(1rem + 0.75rem) 0;

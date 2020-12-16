@@ -683,9 +683,9 @@
         animation: none !important;
         transition: none !important; } }
   :host([fixed]) *:focus {
-    outline: 3px solid transparent; }
+    outline: none; }
   :host([fixed]) .js-focus-visible :focus:not(.focus-visible) {
-    outline: 3px solid transparent; }
+    outline: none; }
   :host([fixed]) .heading {
     margin: calc(1rem + 0.75rem) 0;
     font-weight: 500;
@@ -828,13 +828,6 @@
   @media screen and (min-width: 1800px) {
     :host([fixed]) :host([md]) .dialog {
       max-width: 45%; } }
-  :host([fixed]) :host([sm][lg]) .dialog,
-  :host([fixed]) :host([md][lg]) .dialog {
-    max-height: 90%; }
-  @media screen and (min-width: 1024px) {
-    :host([fixed]) :host([sm][lg]) .dialog,
-    :host([fixed]) :host([md][lg]) .dialog {
-      max-height: 80%; } }
   :host([fixed]) .dialog {
     transition: all 0.3s ease-in-out;
     position: fixed;
@@ -875,8 +868,6 @@
         transform: scale(0); }
         :host([fixed]) .dialog--open {
           transform: scale(1); } }
-  :host([fixed]) :host([unformatted]) .dialog {
-    padding: 0; }
   :host([fixed]) .dialog-header {
     display: flex;
     justify-content: space-between;
@@ -894,13 +885,3 @@
         border-color: var(--auro-color-border-active-on-light); }
       :host([fixed]) .dialog-header--action:hover {
         cursor: pointer; }
-  :host([fixed]) :host([unformatted]) .dialog-header--action {
-    position: absolute;
-    top: var(--auro-size-xl);
-    right: var(--auro-size-xl); }
-    @media screen and (min-width: 1024px) {
-      :host([fixed]) :host([unformatted]) .dialog-header--action {
-        top: var(--auro-size-xxxl);
-        right: var(--auro-size-xxxl); } }
-  :host([fixed]) :host([unformatted][onDark]) .dialog-header--action {
-    color: var(--auro-color-base-white); }
