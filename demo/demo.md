@@ -75,6 +75,68 @@ The `auro-dialog` and `auro-drawer` components should be used in situations wher
 ```
 </auro-accordion>
 
+Use the `stickyFooter` attribute to affix the footer action buttons to the lower part of the dialog window regardless of scroll position.
+<div class="exampleWrapper">
+  <auro-button onClick="toggleInterruption('#stickyFooterDialog')">Open Sticky Footer Dialog</auro-button>
+
+  <auro-dialog id="stickyFooterDialog" stickyFooter>
+    <span slot="header">Sticky Dialog</span>
+    <div slot="content">
+      <p>
+        When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <auro-hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</auro-hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.
+      </p>
+      <p>
+        Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.
+      </p>
+      <auro-header level="3" display="500">
+        Before checking your bags, remember to:
+      </auro-header>
+      <ul>
+        <li>Caerphilly croque monsieur fondue</li>
+        <li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+        <li>Cheddar cheese and biscuits chalk and cheese</li>
+        <li>Camembert de normandie stinking bishop bavarian bergkase</li>
+      </ul>
+    </div>
+    <div slot="footer" className="auro_containedButtons">
+      <auro-button secondary onClick="toggleInterruption('#stickyFooterDialog')">Close</auro-button>
+    </div>
+  </auro-dialog>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+```html
+<auro-button onClick="toggleInterruption('#stickyFooterDialog')">Open Sticky Footer Dialog</auro-button>
+
+<auro-dialog id="stickyFooterDialog">
+  <span slot="header">Sticky Dialog</span>
+  <div slot="content">
+    <p>
+      When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <auro-hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</auro-hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.
+    </p>
+    <p>
+      Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.
+    </p>
+    <auro-header level="3" display="500">
+      Before checking your bags, remember to:
+    </auro-header>
+    <ul>
+      <li>Caerphilly croque monsieur fondue</li>
+      <li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+      <li>Cheddar cheese and biscuits chalk and cheese</li>
+      <li>Camembert de normandie stinking bishop bavarian bergkase</li>
+    </ul>
+  </div>
+  <div slot="footer" className="auro_containedButtons">
+    <auro-button secondary onClick="toggleInterruption('#stickyFooterDialog')">Close</auro-button>
+  </div>
+</auro-dialog>
+```
+</auro-accordion>
+
+
 Read the [auro-dialog](https://auro.alaskaair.com/components/auro/interruption/dialog) documentation for detailed instructions on implementations.
 
 ## Drawer example
