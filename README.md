@@ -51,6 +51,10 @@ import "@alaskaairux/auro-interruption/dist/auro-drawer";
 </auro-drawer>
 ```
 
+## React wrapper
+
+Contained within this repo
+
 ## Install auro-interruption bundled assets from CDN
 
 In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Two bundles are available -- auro-interruption__bundled.js for modern browsers and auro-interruption__bundled.es5.js for legacy browsers (including IE11).

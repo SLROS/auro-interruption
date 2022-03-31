@@ -20,9 +20,10 @@
 
 ## Events
 
-| Event    | Description                            |
-|----------|----------------------------------------|
-| `toggle` | Event fires when the element is closed |
+| Event      | Description                             |
+|------------|-----------------------------------------|
+| `onToggle` | React wrapper for `toggle` custom event |
+| `toggle`   | Event fires when the element is closed  |
 
 ## Slots
 
@@ -56,9 +57,10 @@
 
 ## Events
 
-| Event    | Description                            |
-|----------|----------------------------------------|
-| `toggle` | Event fires when the element is closed |
+| Event      | Description                             |
+|------------|-----------------------------------------|
+| `onToggle` | React wrapper for `toggle` custom event |
+| `toggle`   | Event fires when the element is closed  |
 
 ## Slots
 

@@ -37,6 +37,7 @@ const ESCAPE_KEYCODE = 27,
  * @slot footer - Used for action options, e.g. buttons
  * @function toggleViewable - toggles the 'open' property on the element
  * @event toggle - Event fires when the element is closed
+ * @event onToggle - React wrapper for `toggle` custom event
  */
 
 export default class ComponentBase extends LitElement {
