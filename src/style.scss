@@ -179,6 +179,13 @@ $auro-spacing-options: none;
   }
 }
 
+:host([unformatted][fixed-close-x]) {
+  .dialog-header--action {
+    top: var(--auro-size-xl);
+    right: var(--auro-size-xl);
+  }
+}
+
 // sets X from black to white
 :host([unformatted][onDark]) {
   .dialog-header--action {

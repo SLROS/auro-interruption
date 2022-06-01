@@ -465,6 +465,10 @@ import '@alaskaairux/auro-interruption@/dist/style-unformatted.css'
 
 Within the scope of the auro-dialog there is `aria-labelledby="dialog-header"`. To make proper use of this, in an unformatted dialog, the developer is required to add `id="dialog-header"` to the content header within the dialog content.
 
+### Fixed Close (X)
+
+Use `fixed-close-x` to position the close (X) in the upper-right corner with the same margins across all device screens.
+
 <div class="demo--inline exampleWrapper auro_containedButtons">
   <auro-button onClick="toggleInterruption('#unformattedMdDialog')">Unformatted Medium Dialog</auro-button>
 </div>
